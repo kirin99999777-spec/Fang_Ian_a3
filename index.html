@@ -8,6 +8,7 @@
     <style>
       body {
         font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
         margin: 0;
         padding: 0;
         background-color: black;
@@ -29,34 +30,33 @@
         box-sizing: border-box;
       }
 
-    .top-rectangle {
-    width: 1200px;
-    height: 249px;
-    background-color: #AA2B3A;
-    margin-top: 0px; 
-    max-width: 100%;
-    position: relative; 
-    overflow: hidden; /* 确保内容不会溢出矩形 */
-  }
-.main-image {
-    width: 1200px;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
-  }
-      img {
+      .top-rectangle {
+        width: 1200px;
+        height: 249px;
+        background-color: #AA2B3A;
+        margin-top: 0px;
+        max-width: 100%;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .main-image {
         width: 1200px;
         max-width: 100%;
+        display: block;
+        margin: 0 auto;
       }
-.logo {
-    position: absolute; /* 相对于父元素 .top-rectangle 定位 */
-    top: 20px; /* 从顶部向下 20px */
-    left: 40px; /* 从左侧向右 40px */
-    width: 242px; /* 设置 logo 的宽度 */
-    height: 200; /* 保持图片比例 */
-    max-width: 100%;
-    margin: 0; 
-  }
+
+      .logo {
+        position: absolute;
+        top: 28px;
+        left: 32px;
+        width: 242px;
+        height: 200px;
+        max-width: 100%;
+        margin: 0;
+      }
+
       .bottom-rectangle {
         position: absolute;
         top: 1926px;
@@ -66,6 +66,9 @@
         height: 359px;
         background-color: #141E46;
         max-width: 100%;
+        margin: 0 auto;
+        padding-top: 20px;
+        box-sizing: border-box;
       }
 
       @media (max-width: 1440px) {
@@ -75,11 +78,46 @@
       }
 
       footer {
-        color: white;
-        padding: 0px;
-        text-align: center;
-        margin-bottom: 20px;
+        position: absolute;
         bottom: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        padding: 0;
+        text-align: center;
+      }
+
+      footer p {
+        margin: 0;
+        padding: 20px 0;
+        font-size: 20px;
+      }
+
+      .location-title {
+        position: static;
+        font-size: 40px;
+        color: white;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+        text-align: center;
+      }
+
+      .address-container {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+      }
+
+      .address-container p {
+        margin: 5px 0;
+        line-height: 1.2;
+      }
+
+      .separator-line {
+        width: 1060px;
+        height: 1px;
+        background-color: white;
+        margin: 40px auto 20px auto;
       }
     </style>
   </head>
@@ -87,17 +125,29 @@
   <body>
     <div class="wrapper">
       <div class="content">
-        <div class="top-rectangle"></div>
-        <img class="logo" src="Cozy Nest B&B Logo2.jpg" alt="B&B Logo">
-     <img class="main-image" src="Main Image.jpg" alt="Main Image">
-        <div class="bottom-rectangle"></div>
+        <div class="top-rectangle">
+          <img class="logo" src="Cozy Nest B&B Logo2.png" alt="B&B Logo">
+        </div>
+        <img class="main-image" src="Main Image.jpg" alt="Main Image">
+        <div class="bottom-rectangle">
+          <div class="location-title">Our Location</div>
+
+          <div class="address-container">
+            <p>Scandinavian Cabin Hospitality Group</p>
+            <p>Suite 302, 88 Norwood Avenue</p>
+            <p>Waterloo, ON N2L 4G2, Canada</p>
+            <br>
+            <p>Customer Service: +1 (289) 555-1472</p>
+            <p>Business Hours: 9:00 AM – 9:00 PM</p>
+          </div>
+
+          <div class="separator-line"></div>
+          <footer>
+            <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
+          </footer>
+        </div>
       </div>
+
     </div>
-
-    <footer>
-
-      <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
-
-    </footer>
   </body>
 </html>
