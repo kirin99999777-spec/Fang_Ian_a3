@@ -4,6 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Ian's Assignment 3: Personal B&B Webpage Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
 
     <style>
       body {
@@ -11,7 +12,43 @@
         margin: 0;
         padding: 0;
         background-color: black;
-        
+      }
+
+      .main-nav {
+        position: absolute;
+        top: 196px;
+        right: 40px;
+      }
+
+      .main-nav a {
+        font-family: "Jua", sans-serif;
+        font-size: 30px;
+        color: white;
+        text-decoration: none;
+        font-weight: normal;
+      }
+
+      .main-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 95px;
+      }
+
+      .main-nav li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+      
+      a:hover {
+        color: #1C2A62;
       }
 
       .wrapper {
@@ -38,6 +75,9 @@
         max-width: 100%;
         position: relative;
         overflow: hidden;
+        align-items: flex-start;
+        display: flex;
+        bottom: 0;
       }
 
       .main-image {
@@ -48,7 +88,7 @@
       }
 
       .logo {
-        position: absolute;
+        position: relative;
         top: 28px;
         left: 32px;
         width: 242px;
@@ -85,7 +125,7 @@
         color: white;
         padding: 0;
         text-align: center;
-         font-weight: bold;
+        font-weight: bold;
       }
 
       footer p {
@@ -122,20 +162,25 @@
         background-color: white;
         margin: 25px auto 20px auto;
       }
-      
     </style>
   </head>
-
   <body>
     <div class="wrapper">
       <div class="content">
         <div class="top-rectangle">
           <img class="logo" src="Cozy Nest B&B Logo2.png" alt="B&B Logo">
+          <nav class="main-nav">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Room Booking</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </nav>
         </div>
         <img class="main-image" src="Main Image.jpg" alt="Main Image">
         <div class="bottom-rectangle">
           <div class="location-title">Our Location</div>
-
           <div class="address-container">
             <p>Scandinavian Cabin Hospitality Group</p>
             <p>Suite 302, 88 Norwood Avenue</p>
@@ -144,14 +189,12 @@
             <p>Customer Service: +1 (289) 555-1472</p>
             <p>Business Hours: 9:00 AM – 9:00 PM</p>
           </div>
-
           <div class="separator-line"></div>
           <footer>
             <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
           </footer>
         </div>
       </div>
-
     </div>
   </body>
 </html>
