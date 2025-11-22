@@ -20,7 +20,6 @@
         min-height: 2285px;
       }
 
-
       .content {
         width: 1200px;
         margin: 0 auto;
@@ -30,21 +29,34 @@
         box-sizing: border-box;
       }
 
-
-      .top-rectangle {
+    .top-rectangle {
+    width: 1200px;
+    height: 249px;
+    background-color: #AA2B3A;
+    margin-top: 0px; 
+    max-width: 100%;
+    position: relative; 
+    overflow: hidden; /* 确保内容不会溢出矩形 */
+  }
+.main-image {
+    width: 1200px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+      img {
         width: 1200px;
-        height: 249px;
-        background-color: #AA2B3A;
-       margin-top: 0px;
-        max-width: 100%;
-        aspect-ratio: 1200 / 249;
-      }
-
-       img {
-        width: 1200px;
         max-width: 100%;
       }
-
+.logo {
+    position: absolute; /* 相对于父元素 .top-rectangle 定位 */
+    top: 20px; /* 从顶部向下 20px */
+    left: 40px; /* 从左侧向右 40px */
+    width: 242px; /* 设置 logo 的宽度 */
+    height: 200; /* 保持图片比例 */
+    max-width: 100%;
+    margin: 0; 
+  }
       .bottom-rectangle {
         position: absolute;
         top: 1926px;
@@ -60,7 +72,6 @@
         .wrapper {
           width: 100%;
         }
-
       }
 
       footer {
@@ -69,24 +80,24 @@
         text-align: center;
         margin-bottom: 20px;
         bottom: 0;
-
       }
     </style>
   </head>
 
   <body>
-    
-    <div class="wrapper">
-      <div class="content">
-        <div class="top-rectangle"></div>
-        <img src="Main Image.jpg" alt="Main Image"> 
-        <div class="bottom-rectangle"></div>
-      </div>
-    </div>
+    <div class="wrapper">
+      <div class="content">
+        <div class="top-rectangle"></div>
+        <img class="logo" src="Cozy Nest B&B Logo2.jpg" alt="B&B Logo">
+     <img class="main-image" src="Main Image.jpg" alt="Main Image">
+        <div class="bottom-rectangle"></div>
+      </div>
+    </div>
 
-    <footer>
-      <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
-    </footer>
+    <footer>
 
-  </body>
+      <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
+
+    </footer>
+  </body>
 </html>
