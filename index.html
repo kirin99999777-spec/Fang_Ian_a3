@@ -119,21 +119,40 @@
         display: block;
         margin: 0 auto;
       }
-      
+
       .promote-slogan {
-          font-family: 'Archivo Black', sans-serif;
-          font-size: 40px;
-          color: #AA2B3A; 
-          margin: 30px 0 30px 55px;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 40px;
+        color: #AA2B3A;
+        margin: 30px 0 30px 55px;
       }
 
-.destinations-title {
-    font-family: 'Archivo Black', sans-serif;
-          font-size: 40px;
-          color: #AA2B3A; 
-          margin: 350px 0 30px 55px;
-}
+      .destinations-title {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 40px;
+        color: #AA2B3A;
+        margin: 300px 0 30px 55px;
+      }
       
+      .reserve-button {
+        font-family: 'Archivo Black', sans-serif;
+          background-color: #1C2A62; 
+          color: white;
+          padding: 20px 25px;
+         margin: -90px 0px 0px 850px;
+          border: none;
+          border-radius: 20px;
+          font-size: 24px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          text-decoration: none;
+        display: flex;
+      }
+      
+      .reserve-button:hover {
+          background-color: #AA2B3A;
+      }
+
       .logo {
         position: relative;
         top: 28px;
@@ -231,8 +250,9 @@
         <img class="main-image" src="Main Image.jpg" alt="Main Image">
         <h2 class="promote-slogan">Escape. Relax. Stay.</h2>
         <div class="destinations-header">
-            <h3 class="destinations-title">Featured B&B Destinations</h3>
-        </div>
+          <h3 class="destinations-title">Featured B&B Destinations</h3>
+          <button class="reserve-button">Reserve Your Stay</button>
+        </div>
         <div class="bottom-rectangle">
           <div class="location-title">Our Location</div>
           <div class="address-container">
