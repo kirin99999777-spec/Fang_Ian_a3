@@ -78,6 +78,11 @@
         color: #1C2A62;
       }
 
+      .address-container a {
+        color: white;
+        text-decoration: underline;
+      }
+
       .badge:hover a {
         color: white;
       }
@@ -133,10 +138,15 @@
         color: #AA2B3A;
         margin: 70px 0 50px 55px;
       }
-      
+
       .country-name {
-    margin-top: 2px; /* 减小到 2px，让城市名和国名几乎贴在一起 */
-    margin-bottom: 0; 
+        margin-top: 2px;
+        margin-bottom: 0;
+        margin-left: -10px;
+      }
+      
+      .destination-card p:first-of-type {
+    margin-left: -10px; 
 }
 
       .reserve-button {
@@ -174,21 +184,22 @@
       }
 
       .destinations-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 70px;
-    text-align: center;
-    margin-top: 50px; 
-    padding: 0 100px 70px 55x; 
-}
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        text-align: center;
+        margin-top: 50px;
+        padding: 0 55px 70px 55px;
+      }
+
       .destination-card img {
-    width: 190px;
-    height: 190px;
-    object-fit: cover;
-    display: block;
-    border-radius: 20px;
-    margin: 0 0 20px 30px; 
-}
+        width: 190px;
+        height: 190px;
+        object-fit: cover;
+        display: block;
+        border-radius: 20px;
+        margin: 0 0 20px 30px;
+      }
 
       .logo {
         position: relative;
@@ -272,7 +283,7 @@
         width: 1060px;
         height: 2px;
         background-color: white;
-        margin: 25px auto 20px auto;
+        margin: 11px auto 20px auto;
       }
     </style>
   </head>
@@ -290,6 +301,7 @@
             </ul>
           </nav>
         </div>
+
         <div class="badge">
           <a href="#">Login</a>
         </div>
@@ -299,6 +311,7 @@
           <div class="room-card">
             <img src="Room Image 1.jpg" alt="Luxury Room">
           </div>
+
           <div class="room-card">
             <img src="Room Image 2.jpg" alt="Cozy Cabin">
           </div>
@@ -306,6 +319,7 @@
             <img src="Room Image 3.jpg" alt="Modern Suite">
           </div>
         </div>
+
         <div class="destinations-header">
           <h3 class="destinations-title">Featured B&B Destinations</h3>
           <button class="reserve-button">Reserve Your Stay</button>
@@ -315,22 +329,26 @@
               <p>London</p>
               <p class="country-name">UK</p>
             </div>
+
             <div class="destination-card">
               <img src="Destination Image 2.jpg" alt="Beijing Skyline">
               <p>Beijing</p>
               <p class="country-name">China</p>
             </div>
+
             <div class="destination-card">
               <img src="Destination Image 3.jpg" alt="Moscow Skyline">
               <p>Moscow</p>
               <p class="country-name">Russia</p>
             </div>
+
             <div class="destination-card">
               <img src="Destination Image 4.jpg" alt="Paris Eiffel Tower">
               <p>Paris</p>
               <p class="country-name">France</p>
             </div>
           </div>
+
           <div class="bottom-rectangle">
             <div class="location-title">Our Location</div>
             <div class="address-container">
@@ -339,13 +357,16 @@
               <p>Waterloo, ON N2L 4G2, Canada</p>
               <br>
               <p>Customer Service: +1 (289) 555-1472</p>
+              <p>Email: <a href="mailto:y259fang@uwaterloo.ca">y259fang@uwaterloo.ca</a></p>
               <p>Business Hours: 9:00 AM – 9:00 PM</p>
             </div>
+
             <div class="separator-line"></div>
             <footer>
               <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
             </footer>
           </div>
+
         </div>
       </div>
     </div>
