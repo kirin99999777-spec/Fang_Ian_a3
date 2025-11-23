@@ -41,7 +41,6 @@
         display: block;
       }
 
-
       .main-nav a {
         font-family: "Jua", sans-serif;
         font-size: 30px;
@@ -169,6 +168,32 @@
         object-fit: cover;
       }
 
+      .destinations-grid {
+    display: grid;
+    /* 四列布局，每列均分可用空间 */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 70px; /* 卡片之间的间距 */
+    
+    /* 左右边距 55px，与内容对齐。底部添加 70px 间距。 */
+    padding: 50px 100px 70px 110px; 
+    text-align: center;
+}
+
+.destination-card img {
+    width: 190px;
+    height: 190px; 
+    object-fit: cover; 
+    display: block;
+    border-radius: 20px; 
+}
+
+.destination-card p {
+      font-family: 'Archivo Black', sans-serif;
+    font-size: 24px;
+    color: #AA2B3A;
+    margin-top: 10px;
+    font-weight: bold;
+}
       .logo {
         position: relative;
         top: 28px;
@@ -279,6 +304,23 @@
         <div class="destinations-header">
       <h3 class="destinations-title">Featured B&B Destinations</h3>
           <button class="reserve-button">Reserve Your Stay</button>
+      <div class="destinations-grid">
+            <div class="destination-card">
+                <img src="Destination Image 1.jpg" alt="London Skyline">
+                <p>London UK</p>
+            </div>
+            <div class="destination-card">
+                <img src="Destination Image 2.jpg" alt="Beijing Skyline">
+                <p>Beijing China</p>
+            </div>
+            <div class="destination-card">
+                <img src="Destination Image 3.jpg" alt="Moscow Skyline">
+                <p>Moscow Russia</p>
+            </div>
+            <div class="destination-card">
+                <img src="Destination Image 4.jpg" alt="Paris Eiffel Tower">
+                <p>Paris France</p>
+            </div>
         </div>
         <div class="bottom-rectangle">
           <div class="location-title">Our Location</div>
@@ -297,5 +339,6 @@
         </div>
       </div>
     </div>
+        </div>
   </body>
 </html>
