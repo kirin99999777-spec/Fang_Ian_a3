@@ -118,6 +118,7 @@
         max-width: 100%;
         display: block;
         margin: 0 auto;
+        opacity: 0.84;
       }
 
       .promote-slogan {
@@ -131,26 +132,41 @@
         font-family: 'Archivo Black', sans-serif;
         font-size: 40px;
         color: #AA2B3A;
-        margin: 300px 0 30px 55px;
+        margin: 30px 0 30px 55px;
       }
-      
+
       .reserve-button {
         font-family: 'Archivo Black', sans-serif;
-          background-color: #1C2A62; 
-          color: white;
-          padding: 20px 25px;
-         margin: -90px 0px 0px 850px;
-          border: none;
-          border-radius: 20px;
-          font-size: 24px;
-          cursor: pointer;
-          transition: background-color 0.3s;
-          text-decoration: none;
+        background-color: #1C2A62;
+        color: white;
+        padding: 15px 25px;
+        margin: -85px 0px 0px 830px;
+        border: none;
+        border-radius: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none;
         display: flex;
       }
-      
+
       .reserve-button:hover {
-          background-color: #AA2B3A;
+        background-color: #AA2B3A;
+      }
+
+      .room-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 100px;
+        padding: 0 90px;
+      }
+
+      .room-card img {
+        width: 270px;
+        height: 270px;
+        display: block;
+        border-radius: 20px;
+        object-fit: cover;
       }
 
       .logo {
@@ -249,10 +265,21 @@
         </div>
         <img class="main-image" src="Main Image.jpg" alt="Main Image">
         <h2 class="promote-slogan">Escape. Relax. Stay.</h2>
+        <div class="room-grid">
+          <div class="room-card">
+            <img src="Room Image 1.jpg" alt="Luxury Room">
+          </div>
+          <div class="room-card">
+            <img src="Room Image 2.jpg" alt="Cozy Cabin">
+          </div>
+          <div class="room-card">
+            <img src="Room Image 3.jpg" alt="Modern Suite">
+          </div>
+        </div>
         <div class="destinations-header">
-          <h3 class="destinations-title">Featured B&B Destinations</h3>
+      <h3 class="destinations-title">Featured B&B Destinations</h3>
           <button class="reserve-button">Reserve Your Stay</button>
-        </div>
+        </div>
         <div class="bottom-rectangle">
           <div class="location-title">Our Location</div>
           <div class="address-container">
