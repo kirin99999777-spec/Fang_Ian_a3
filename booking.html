@@ -117,86 +117,13 @@
         bottom: 0;
       }
 
-      .main-image {
-        width: 1200px;
-        max-width: 100%;
-        display: block;
-        margin: 0 auto;
-        opacity: 0.84;
-      }
-
       .promote-slogan {
         font-family: 'Archivo Black', sans-serif;
-        font-size: 40px;
+        font-size: 50px;
         color: #AA2B3A;
         margin: 30px 0 30px 55px;
       }
-
-      .destinations-title {
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 40px;
-        color: #AA2B3A;
-        margin: 70px 0 50px 55px;
-      }
-
-      .country-name {
-        margin-top: 2px;
-        margin-bottom: 0;
-        margin-left: -10px;
-      }
-
-      .reserve-button {
-        font-family: 'Archivo Black', sans-serif;
-        background-color: #1C2A62;
-        color: white;
-        padding: 15px 25px;
-        margin: -100px 0px 0px 830px;
-        border: none;
-        border-radius: 20px;
-        font-size: 24px;
-        cursor: pointer;
-        transition: background-color 0.3s;
-        text-decoration: none;
-        display: flex;
-      }
-
-      .reserve-button:hover {
-        background-color: #AA2B3A;
-      }
-
-      .room-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 100px;
-        padding: 0 90px;
-      }
-
-      .room-card img {
-        width: 270px;
-        height: 270px;
-        display: block;
-        border-radius: 20px;
-        object-fit: cover;
-      }
-
-      .destinations-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        text-align: center;
-        margin-top: 50px;
-        padding: 0 55px 70px 55px;
-      }
-
-      .destination-card img {
-        width: 190px;
-        height: 190px;
-        object-fit: cover;
-        display: block;
-        border-radius: 20px;
-        margin: 0 0 20px 30px;
-      }
-
+    
       .logo {
         position: relative;
         top: 28px;
@@ -207,18 +134,48 @@
         margin: 0;
       }
 
+.booking-form-grid {
+    width: 600px; 
+    margin: 30px auto; 
+    display: flex;
+    flex-direction: column; 
+    gap: 30px; 
+}
+
+.form-card {
+    background-color: #1C2A62; 
+    color: white; 
+    padding: 18px 25px; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    white-space: nowrap; 
+    width: auto;
+}
+
+
+.form-input {
+    text-align: right; 
+    margin-left: 20px;
+    min-width: 50px;
+}
+      
       .bottom-rectangle {
-; 
-    
-    width: 1200px;
-    height: 359px;
-    background-color: #141E46;
-    max-width: 100%;
-    margin: 0 auto;
-    padding-top: 35px;
-    box-sizing: border-box;
+        width: 1200px;
+        height: 359px;
+        background-color: #141E46;
+        max-width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding-top: 35px;
+        box-sizing: border-box;
       }
 
+      
       @media (max-width: 1440px) {
         .wrapper {
           width: 100%;
@@ -242,16 +199,13 @@
         font-size: 20px;
         font-weight: bold;
       }
-
-      .destination-card p {
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 24px;
-        color: #AA2B3A;
-        margin-top: 5px;
-        margin-bottom: 0;
-        font-weight: bold;
-      }
-
+      
+.form-card p {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 20px;
+    margin: 0; 
+}
+    
       .location-title {
         position: static;
         font-size: 40px;
@@ -280,9 +234,6 @@
         margin: 11px auto 20px auto;
       }
 
-      .destination-card p:first-of-type {
-        margin-left: -10px;
-      }
     </style>
   </head>
   <body>
@@ -291,7 +242,7 @@
         <div class="top-rectangle">
           <img class="logo" src="cozynestb&blogo2.png" alt="B&B Logo">
           <nav class="main-nav">
-                <ul>
+            <ul>
               <li><a href="index.html">Home</a></li>
               <li><a href="booking.html">Room Booking</a></li>
               <li><a href="#">Contact</a></li>
@@ -303,28 +254,42 @@
         <div class="badge">
           <a href="#">Login</a>
         </div>
-        <img class="main-image" src="mainimage.jpg" alt="Main Image">
-        <h2 class="promote-slogan">Escape. Relax. Stay.</h2>
-       
-          <div class="bottom-rectangle">
-            <div class="location-title">Our Location</div>
-            <div class="address-container">
-              <p>Scandinavian Cabin Hospitality Group</p>
-              <p>Suite 302, 88 Norwood Avenue</p>
-              <p>Waterloo, ON N2L 4G2, Canada</p>
-              <br>
-              <p>Customer Service: +1 (289) 555-1472</p>
-              <p>Email: <a href="mailto:y259fang@uwaterloo.ca">y259fang@uwaterloo.ca</a></p>
-              <p>Business Hours: 9:00 AM – 9:00 PM</p>
-            </div>
 
-            <div class="separator-line"></div>
-            <footer>
-              <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
-            </footer>
+        <h2 class="promote-slogan"> • Room Booking</h2>
+        
+<div class="booking-form-grid">
+    <div class="form-card">
+        <p class="form-label">Check-in date →</p>
+        <p class="form-input">【  】</p>
+    </div>
+    <div class="form-card">
+        <p class="form-label">Check-out date →</p>
+        <p class="form-input">【  】</p>
+    </div>
+    <div class="form-card">
+        <p class="form-label">Number of guests →</p>
+        <p class="form-input">【  】</p>
+    </div>
+</div>
+        
+        <div class="bottom-rectangle">
+          <div class="location-title">Our Location</div>
+          <div class="address-container">
+            <p>Scandinavian Cabin Hospitality Group</p>
+            <p>Suite 302, 88 Norwood Avenue</p>
+            <p>Waterloo, ON N2L 4G2, Canada</p>
+            <br>
+            <p>Customer Service: +1 (289) 555-1472</p>
+            <p>Email: <a href="mailto:y259fang@uwaterloo.ca">y259fang@uwaterloo.ca</a></p>
+            <p>Business Hours: 9:00 AM – 9:00 PM</p>
           </div>
 
+          <div class="separator-line"></div>
+          <footer>
+            <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
+          </footer>
         </div>
+
       </div>
     </div>
   </body>
