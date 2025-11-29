@@ -183,7 +183,6 @@
       .address-container p {
         text-align: center;
         margin: 4px 0;
-        line-height: 1;
       }
 
       .separator-line {
@@ -192,249 +191,28 @@
         background-color: white;
         margin: 11px auto 20px auto;
       }
-
+      
       .badge:hover a {
         color: white;
       }
-
-      好的，我明白了。您希望根据您提供的现有代码，将图片尺寸缩小、向上移动并居中，同时不修改其他非图片相关的现有结构和样式。 我将主要调整 .owner-profile-container img 的 CSS 属性来达到这个效果。 调整步骤： 图片尺寸缩小: 我将 width 和 height 都设置为更小的固定值 (例如 200px)。 向上移动并居中: 我将调整 .owner-profile-container 的 margin-top 来控制向上移动，同时 text-align: center;
-
-      已经确保了水平居中。 这是根据您的要求，只调整图片样式的完整代码： HTML < !DOCTYPE html><html lang="en-CA"><head><meta charset="UTF-8"><title>Ian's Assignment 3: Personal B&B Webpage Design</title>
- <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet"><style>body {
-        font-family: "Times New Roman", Times, serif;
-        margin: 0;
-        padding: 0;
-        background-color: black;
-      }
-
-      .badge {
-        font-family: "Jua", sans-serif;
-        background-color: #AA2B3A;
-        color: white;
-        padding: 5px 15px;
-        font-size: 20px;
-        font-weight: normal;
-        border-radius: 3px;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        border: 3px solid white;
-        z-index: 10;
-      }
-
-      .badge:hover {
-        background-color: #1C2A62;
-        border-color: #F1E6D8;
-      }
-
-      .badge a {
-        color: white;
-        text-decoration: none;
-        display: block;
-      }
-
-      .main-nav a {
-        font-family: "Jua", sans-serif;
-        font-size: 30px;
-        color: white;
-        text-decoration: none;
-        font-weight: normal;
-      }
-
-      .main-nav {
-        position: absolute;
-        top: 196px;
-        right: 40px;
-      }
-
-      .main-nav ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        gap: 95px;
-      }
-
-      .main-nav li {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-
-      a:hover {
-        color: #1C2A62;
-      }
-
-      .address-container a {
-        color: white;
-        text-decoration: underline;
-      }
-
-      .wrapper {
-        width: 1440px;
-        margin: 0 auto;
-        background-color: white;
-        min-height: 2285px;
-      }
-
-      .content {
-        width: 1200px;
-        margin: 0 auto;
-        background-color: #F1E6D8;
-        padding: 0px;
-        min-height: 2285px;
-        box-sizing: border-box;
-        position: relative;
-      }
-
-      .top-rectangle {
-        width: 1200px;
-        height: 249px;
-        background-color: #AA2B3A;
-        margin-top: 0px;
-        max-width: 100%;
-        position: relative;
-        overflow: visible;
-        align-items: flex-start;
-        display: flex;
-        bottom: 0;
-      }
-
-      .promote-slogan {
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 60px;
-        color: #AA2B3A;
-        margin: 30px 0 30px 55px;
-      }
-
-      .logo {
-        position: relative;
-        top: 28px;
-        left: 32px;
-        width: 242px;
-        height: 200px;
-        max-width: 100%;
-        margin: 0;
-      }
-
-      .bottom-rectangle {
-        width: 1200px;
-        height: 359px;
-        background-color: #141E46;
-        max-width: 100%;
-        position: absolute;
-        bottom: 0;
-        margin: 0;
-        padding-top: 35px;
-        box-sizing: border-box;
-      }
-
-      @media (max-width: 1440px) {
-        .wrapper {
-          width: 100%;
-        }
-      }
-
-      footer {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        color: white;
-        padding: 0;
-        text-align: center;
-        font-weight: bold;
-      }
-
-      footer p {
-        margin: 0;
-        padding: 20px 0;
-        font-size: 20px;
-        font-weight: bold;
-      }
-
-      .location-title {
-        position: static;
-        font-size: 40px;
-        color: white;
-        font-weight: bold;
-        margin: 0 0 45px 0;
-        text-align: center;
-      }
-
-      .address-container {
-        text-align: center;
-        color: white;
-        font-size: 20px;
-      }
-
-      .address-container p {
-        text-align: center;
-        margin: 4px 0;
-        line-height: 1;
-      }
-
-      .separator-line {
-        width: 1060px;
-        height: 2px;
-        background-color: white;
-        margin: 11px auto 20px auto;
-      }
-
-      .badge:hover a {
-        color: white;
-      }
-
-      /* ===== 修正图片样式和定位以实现居中效果 ===== */
+      
       .owner-profile-container {
         width: 200px;
-        /* 图片容器宽度 */
         text-align: center;
-
-        /* 关键：使用绝对定位实现精确居中 */
         position: absolute;
-        top: 45%;
-        /* 从顶部向下偏移 45%，实现垂直居中 */
-        left: 50%;
-        /* 从左侧偏移 50% */
-        transform: translate(-50%, -50%);
-        /* 抵消自身宽度和高度，实现真正的中心对齐 */
-        z-index: 5;
-        /* 确保图片在背景色块之上 */
       }
 
       .owner-profile-container img {
-        width: 200px;
-        height: 200px;
+        width: 450px;
+        height: 450px;
         object-fit: cover;
         border-radius: 50%;
-        /* 圆形 */
         border: 8px solid #AA2B3A;
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
         display: block;
         margin: 0 auto;
       }
-
-      .owner-bio {
-        color: #AA2B3A;
-        /* 设置文字颜色 */
-        margin-top: 10px;
-      }
-
-      .owner-bio h4 {
-        margin: 0;
-        font-size: 20px;
-      }
-
-      .owner-bio p {
-        margin: 5px 0 0 0;
-        font-size: 16px;
-      }
+      
     </style>
   </head>
   <body>
