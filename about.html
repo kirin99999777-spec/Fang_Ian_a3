@@ -1,4 +1,5 @@
 <!-- created by <Ian Fang> on <2025/11/20> -->
+
 <!DOCTYPE html>
 <html lang="en-CA">
   <head>
@@ -128,13 +129,13 @@
         max-width: 100%;
         margin: 0;
       }
-      
-       .separator-line {
-         width: 1060px;
-         height: 2px;
-         background-color: white;
-         margin: 16px auto 20px auto; 
-}
+
+      .separator-line {
+        width: 1060px;
+        height: 2px;
+        background-color: white;
+        margin: 16px auto 20px auto;
+      }
 
       .bottom-rectangle {
         width: 1200px;
@@ -195,25 +196,80 @@
       .badge:hover a {
         color: white;
       }
-      
-     
-.owner-profile-container {
-  text-align: center;
-  margin: 70px auto 0 auto; 
-  position: static; 
-}
 
-.owner-profile-container img {
-  width: 450px;
-  height: 450px;
-  border-radius: 50%; 
-  object-fit: cover; 
-  border: 8px solid #AA2B3A;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-  display: block;
-  margin: 0 auto;
-}
-      
+      .owner-profile-container {
+        text-align: center;
+        margin: 70px auto 0 auto;
+        position: static;
+      }
+
+      .owner-profile-container img {
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 8px solid #AA2B3A;
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        display: block;
+        margin: 0 auto;
+      }
+
+      .owner-bio {
+        text-align: center;
+      }
+
+      .owner-name {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 45px;
+        color: #AA2B3A;
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+
+      .owner-tagline {
+        font-family: "Times New Roman", Times, serif;
+        font-style: italic;
+        font-size: 30px;
+        color: black;
+        line-height: 1.4;
+        font-weight: bold;
+        display: block; margin: 20px auto 0 auto; 
+      }
+
+      .philosophy-section {
+        width: 1000px;
+        margin: 100px auto 0 auto;
+        padding: 45px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+      }
+
+      .philosophy-title {
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 35px;
+        color: #1C2A62;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      .philosophy-line {
+        width: 80%;
+        border: 0;
+        height: 2px;
+        background-color: #AA2B3A;
+        margin: 10px auto 30px auto;
+      }
+
+      .story-section p {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px;
+        color: black;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        text-align: justify;
+      }
       
     </style>
   </head>
@@ -237,10 +293,19 @@
         </div>
         <h2 class="promote-slogan"> • About </h2>
         <div class="owner-profile-container">
-          <img src="owner.png" alt="Owner's Image">
-          <div class="owner-bio">
-          </div>
-        </div>
+                    <img src="owner.png" alt="Owner's Image">
+                    <div class="owner-bio">
+           <p class="owner-name">Daniel Lin <br> Cozy Nest B&B Founder</p>
+            <p class="owner-tagline">— Dedicated to Scandinavian comfort and hospitality —</p> 
+          </div>
+                  </div>
+        <div class="philosophy-section">
+                    <h3 class="philosophy-title">How the B&B Was Established</h3>
+                   
+          <hr class="philosophy-line">
+          <p>What began as a personal project, renovating a small lakeside cabin, slowly grew into a full B&B. Daniel spent years refining every detail, from the architecture to the interior textures, inspired by Scandinavian comfort and Asian craftsmanship. Scandinavian Cabin Retreat opened its doors with a single goal: to offer guests a “peaceful, thoughtful, and beautifully designed place to rest”. </p>
+                 
+        </div>
         <div class="bottom-rectangle">
           <div class="location-title">Our Location</div>
           <div class="address-container">
@@ -251,11 +316,12 @@
             <p>Email: <a href="mailto:y259fang@uwaterloo.ca">y259fang@uwaterloo.ca</a></p>
             <p>Business Hours: 9:00 AM – 9:00 PM</p>
           </div>
-<div class="separator-line"></div>
+          <div class="separator-line"></div>
           <footer>
             <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
           </footer>
         </div>
       </div>
+    </div>
   </body>
 </html>
