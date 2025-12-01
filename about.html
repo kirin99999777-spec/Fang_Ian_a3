@@ -128,6 +128,13 @@
         max-width: 100%;
         margin: 0;
       }
+      
+       .separator-line {
+         width: 1060px;
+         height: 2px;
+         background-color: white;
+         margin: 16px auto 20px auto; 
+}
 
       .bottom-rectangle {
         width: 1200px;
@@ -185,23 +192,28 @@
         margin: 4px 0;
       }
 
-      .separator-line {
-        width: 1060px;
-        height: 2px;
-        background-color: white;
-        margin: 11px auto 20px auto;
-      }
-      
       .badge:hover a {
         color: white;
       }
       
-      .image-center-area {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+     
+.owner-profile-container {
+  text-align: center;
+  margin: 70px auto 0 auto; 
+  position: static; 
+}
+
+.owner-profile-container img {
+  width: 450px;
+  height: 450px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 8px solid #AA2B3A;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 0 auto;
+}
+      
       
     </style>
   </head>
@@ -224,6 +236,11 @@
           <a href="#">Login</a>
         </div>
         <h2 class="promote-slogan"> • About </h2>
+        <div class="owner-profile-container">
+          <img src="owner.png" alt="Owner's Image">
+          <div class="owner-bio">
+          </div>
+        </div>
         <div class="bottom-rectangle">
           <div class="location-title">Our Location</div>
           <div class="address-container">
@@ -234,17 +251,11 @@
             <p>Email: <a href="mailto:y259fang@uwaterloo.ca">y259fang@uwaterloo.ca</a></p>
             <p>Business Hours: 9:00 AM – 9:00 PM</p>
           </div>
-          <div class="owner-profile-container">
-            <img src="owner.png" alt="Owner's Image">
-            <div class="owner-bio">
-            </div>
-          </div>
-          <div class="separator-line"></div>
+<div class="separator-line"></div>
           <footer>
             <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
           </footer>
         </div>
       </div>
-    </div>
   </body>
 </html>
