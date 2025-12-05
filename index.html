@@ -1,5 +1,31 @@
 <!-- created by <Ian Fang> on <2025/12/04> -->
 
+<!--
+  *GenAI Use Documentation*
+  -------------------------
+  The following components of this project were assisted using GenAI:
+
+  • Use of Prompt: I asked GenAI to help with proofreading my text, correcting spelling,
+    reviewing code snippets for potential conflicts, and clarifying HTML/CSS syntax
+    where needed.
+
+  • GenAI assisted with proofreading written content and fixing spelling mistakes.
+  • GenAI reviewed specific code sections to identify possible structure or syntax issues.
+  • GenAI suggested small refinements to individual elements (e.g., spacing, alignment,
+    clarity) but did not generate overall layout or site structure.
+  • GenAI recommended clearer naming conventions and improvements to code organization.
+  • GenAI helped verify consistency between HTML and CSS components.
+  • GenAI provided explanations when I needed clarification on functions, selectors,
+    or styling rules.
+  • GenAI supported improving readability, consistency, and maintainability of the project.
+
+  In accordance with course guidelines:
+  • GenAI was NOT used to generate the overall page layout, site structure,
+    or full sections of HTML/CSS.
+  • All AI-assisted suggestions were manually reviewed, understood, and edited by me
+    before being included in this project.
+-->
+
 <!DOCTYPE html>
 <html lang="en-CA">
   <head>
@@ -9,6 +35,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 
     <style>
+      /* Global body styling */
       body {
         font-family: "Times New Roman", Times, serif;
         margin: 0;
@@ -16,6 +43,7 @@
         background-color: black;
       }
 
+      /* Login button/badge styling */
       .badge {
         font-family: "Jua", sans-serif;
         background-color: #AA2B3A;
@@ -28,20 +56,30 @@
         top: 20px;
         right: 20px;
         border: 3px solid white;
+          /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_pos_z-index.php]
+      Author: [w3schools]
+      Name: [CSS z-index Property]
+      Description: [The z-index property specifies the stack order of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         z-index: 10;
       }
 
+      /* Badge hover effect */
       .badge:hover {
         background-color: #1C2A62;
         border-color: #F1E6D8;
       }
 
+      /* Badge link color */
       .badge a {
         color: white;
         text-decoration: none;
         display: block;
       }
 
+      /* Main navigation link base styling */
       .main-nav a {
         font-family: "Jua", sans-serif;
         font-size: 30px;
@@ -52,17 +90,20 @@
         display: inline-block;
       }
 
+      /* Active link border (current page indicator) */
       .main-nav .active {
         border: 3px solid white;
         border-radius: 3px;
       }
 
+      /* Position of the main navigation container */
       .main-nav {
         position: absolute;
         top: 196px;
         right: 40px;
       }
 
+      /* Navigation list layout (horizontal flex) */
       .main-nav ul {
         list-style: none;
         padding: 0;
@@ -71,30 +112,36 @@
         gap: 95px;
       }
 
+      /* Navigation list item reset */
       .main-nav li {
         list-style: none;
         padding: 0;
         margin: 0;
       }
 
+      /* Global image scaling */
       img {
         width: 100%;
         height: auto;
       }
 
+      /* General link hover color */
       a:hover {
         color: #1C2A62;
       }
 
+      /* Address container link style */
       .address-container a {
         color: white;
         text-decoration: underline;
       }
 
+      /* Badge link color on badge hover */
       .badge:hover a {
         color: white;
       }
 
+      /* Outer page wrapper (fixed width, centered) */
       .wrapper {
         width: 1440px;
         margin: 0 auto;
@@ -102,16 +149,25 @@
         min-height: 2285px;
       }
 
+      /* Inner content area (fixed width, centered) */
       .content {
         width: 1200px;
         margin: 0 auto;
         background-color: #F1E6D8;
         padding: 0px;
         min-height: 2285px;
+      /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_box-sizing.asp]
+      Author: [w3schools]
+      Name: [CSS Box Sizing]
+      Description: [The CSS box-sizing property defines how to calculate the width and height of an element: should the calculation include padding and borders, or not.]
+      Date retrieved: [2025/12/04]
+      -->*/
         box-sizing: border-box;
         position: relative;
       }
 
+      /* Header background rectangle */
       .top-rectangle {
         width: 1200px;
         height: 249px;
@@ -119,12 +175,27 @@
         margin-top: 0px;
         max-width: 100%;
         position: relative;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/css/css_overflow.asp]
+      Author: [w3schools]
+      Name: [CSS The overflow Property]
+      Description: [The CSS overflow property controls what happens to content that is too big to fit into an area.]
+      Date retrieved: [2025/12/04]
+      -->*/
         overflow: visible;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/css/css_overflow.asp]
+      Author: [w3schools]
+      Name: [CSS align-items Property]
+      Description: [The align-items property specifies the default alignment for items inside a flexbox or grid container.]
+      Date retrieved: [2025/12/04]
+      -->*/
         align-items: flex-start;
         display: flex;
         bottom: 0;
       }
 
+      /* Main hero image styling */
       .main-image {
         width: 1200px;
         max-width: 100%;
@@ -133,6 +204,7 @@
         opacity: 0.84;
       }
 
+      /* Promotional slogan styling */
       .promote-slogan {
         font-family: 'Archivo Black', sans-serif;
         font-size: 40px;
@@ -140,6 +212,7 @@
         margin: 30px 0 30px 55px;
       }
 
+      /* Featured destinations title */
       .destinations-title {
         font-family: 'Archivo Black', sans-serif;
         font-size: 40px;
@@ -147,12 +220,14 @@
         margin: 70px 0 50px 55px;
       }
 
+      /* Country name adjustment */
       .country-name {
         margin-top: 2px;
         margin-bottom: 0;
         margin-left: -10px;
       }
 
+      /* Reserve button styling */
       .reserve-button {
         font-family: 'Archivo Black', sans-serif;
         background-color: #1C2A62;
@@ -163,6 +238,13 @@
         border: none;
         border-radius: 20px;
         font-size: 26px;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_transitions.asp]
+      Author: [w3schools]
+      Name: [The CSS transition Property]
+      Description: [CSS transitions allows you to change property values smoothly, over a given duration.]
+      Date retrieved: [2025/12/04]
+      -->*/
         transition: background-color 0.3s;
         text-decoration: none;
         display: flex;
@@ -170,13 +252,22 @@
         align-items: center;
       }
 
+      /* Room preview grid layout */
       .room-grid {
         display: grid;
+          /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_grid-template-columns.php]
+      Author: [w3schools]
+      Name: [CSS grid-template-columns Property]
+      Description: [The grid-template-columns property specifies the number (and the widths) of columns in a grid layout.]
+      Date retrieved: [2025/12/04]
+      -->*/
         grid-template-columns: 1fr 1fr 1fr;
         gap: 100px;
         padding: 0 90px;
       }
 
+      /* Room card image styling */
       .room-card img {
         width: 270px;
         height: 270px;
@@ -185,6 +276,7 @@
         object-fit: cover;
       }
 
+      /* Destinations grid layout */
       .destinations-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -194,15 +286,24 @@
         padding: 0 55px 70px 55px;
       }
 
+      /* Destination card image styling */
       .destination-card img {
         width: 190px;
         height: 190px;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_object-fit.asp]
+      Author: [w3schools]
+      Name: [CSS object-fit Property]
+      Description: [The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.]
+      Date retrieved: [2025/12/04]
+      -->*/
         object-fit: cover;
         display: block;
         border-radius: 20px;
         margin: 0 0 20px 30px;
       }
 
+      /* Logo positioning and sizing */
       .logo {
         position: relative;
         top: 28px;
@@ -213,6 +314,7 @@
         margin: 0;
       }
 
+      /* Footer background rectangle */
       .bottom-rectangle {
         width: 1200px;
         height: 359px;
@@ -223,12 +325,21 @@
         box-sizing: border-box;
       }
 
+      /* Media query for wrapper responsiveness */
+      /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/atrule_media.php]
+      Author: [w3schools]
+      Name: [CSS @media Rule]
+      Description: [The CSS @media rule is used in media queries to apply different styles for different media types/devices.]
+      Date retrieved: [2025/12/04]
+      -->*/
       @media (max-width: 1440px) {
         .wrapper {
           width: 100%;
         }
       }
 
+      /* Footer section positioning */
       footer {
         position: absolute;
         bottom: 0;
@@ -240,6 +351,7 @@
         font-weight: bold;
       }
 
+      /* Footer paragraph text style */
       footer p {
         margin: 0;
         padding: 20px 0;
@@ -247,6 +359,7 @@
         font-weight: bold;
       }
 
+      /* Destination card text styling */
       .destination-card p {
         font-family: 'Archivo Black', sans-serif;
         font-size: 24px;
@@ -256,6 +369,7 @@
         font-weight: bold;
       }
 
+      /* Location title styling in footer */
       .location-title {
         position: static;
         font-size: 40px;
@@ -265,18 +379,21 @@
         text-align: center;
       }
 
+      /* Address container text alignment and color */
       .address-container {
         text-align: center;
         color: white;
         font-size: 24px;
       }
 
+      /* Address paragraph line spacing */
       .address-container p {
         text-align: center;
         margin: 4px 0;
         line-height: 1;
       }
 
+      /* Separator line style in footer */
       .separator-line {
         width: 1060px;
         height: 2px;
@@ -284,14 +401,24 @@
         margin: 11px auto 20px auto;
       }
 
+      /* Adjustment for the first paragraph in destination card (city name) */
+      /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/sel_first-of-type.php]
+      Author: [w3schools]
+      Name: [CSS :first-of-type Pseudo-class]
+      Description: [The CSS :first-of-type pseudo-class selects the first element of its type among a group of sibling elements.]
+      Date retrieved: [2025/12/04]
+      -->*/
       .destination-card p:first-of-type {
         margin-left: -10px;
       }
 
+      /* Reserve button hover color */
       .reserve-button:hover {
         background-color: #DC2B40;
         color: white;
       }
+      
     </style>
   </head>
   <body>
@@ -361,7 +488,14 @@
               <p>Scandinavian Cabin Hospitality Group</p>
               <p>Suite 302, 88 Norwood Avenue</p>
               <p>Waterloo, ON N2L 4G2, Canada</p>
-              <p>Customer Service: +1 (289) 555-1472</p>
+              <p>Customer Service: +1 (289) 555-1472</p> 
+          <!--
+      Code copied from: [https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto]
+      Author: [w3schools]
+      Name: [HTML mailto rule]
+      Description: [To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:]
+      Date retrieved: [2025/12/04]
+      -->
               <p>Email: <a href="mailto:y259fang@uwaterloo.ca">y259fang@uwaterloo.ca</a></p>
               <p>Business Hours: 9:00 AM – 9:00 PM</p>
             </div>
@@ -370,7 +504,6 @@
             <footer>
               <p>*Cozy Nest B&B* &copy;2025 Ian’s Design Blog. All rights reserved.</p>
             </footer>
-
           </div>
         </div>
       </div>
