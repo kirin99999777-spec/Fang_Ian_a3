@@ -41,6 +41,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <style>
+      
+      /* Global body styling */
       body {
         font-family: "Times New Roman", Times, serif;
         margin: 0;
@@ -48,6 +50,7 @@
         background-color: black;
       }
 
+      /* Styling for the absolute positioned 'Login' badge */
       .badge {
         font-family: "Jua", sans-serif;
         background-color: #AA2B3A;
@@ -60,20 +63,37 @@
         top: 20px;
         right: 20px;
         border: 3px solid white;
+          /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_pos_z-index.php]
+      Author: [w3schools]
+      Name: [CSS z-index Property]
+      Description: [The z-index property specifies the stack order of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         z-index: 10;
       }
 
+      /* Hover effect for the badge */
       .badge:hover {
         background-color: #1C2A62;
         border-color: #F1E6D8;
       }
 
+      /* Style the anchor inside the badge */
       .badge a {
         color: white;
         text-decoration: none;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_class_display.php]
+      Author: [w3schools]
+      Name: [CSS display Property]
+      Description: [The display property specifies the display behavior (the type of rendering box) of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         display: block;
       }
 
+      /* Styling for all navigation links */
       .main-nav a {
         font-family: "Jua", sans-serif;
         font-size: 30px;
@@ -82,75 +102,142 @@
         font-weight: normal;
       }
       
+      /* Style for the current active page link indicator */
       .main-nav .active {
         border: 3px solid white;
         border-radius: 3px; 
       }
 
+      /* Position the main navigation menu */
       .main-nav {
         position: absolute;
         top: 196px;
         right: 40px;
       }
 
+      /* Style the list of navigation items for horizontal display */
       .main-nav ul {
         list-style: none;
         padding: 0;
         margin: 0;
+           /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_flexbox.asp]
+      Author: [w3schools]
+      Name: [CSS Flexbox]
+      Description: [Flexbox is a layout model for arranging items (horizontally or vertically) within a container, in a flexible and responsive way.]
+      Date retrieved: [2025/12/04]
+      -->*/
         display: flex;
         gap: 95px;
       }
 
+      /* Remove list styling from list items */
       .main-nav li {
         list-style: none;
         padding: 0;
         margin: 0;
       }
 
+      /* Base image sizing */
       img {
         width: 100%;
         height: auto;
       }
 
+      /* General link hover color */
       a:hover {
         color: #1C2A62;
       }
 
+      /* Styling for links in the address container (footer) */
       .address-container a {
         color: white;
         text-decoration: underline;
       }
 
+      /* Main wrapper, fixed width, centered on the page */
       .wrapper {
         width: 1440px;
         margin: 0 auto;
         background-color: white;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_min-height.php]
+      Author: [w3schools]
+      Name: [CSS min-height Property]
+      Description: [The min-height property defines the minimum height of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         min-height: 2285px;
       }
 
+      /* Inner content area, fixed width, centered, and styled */
       .content {
         width: 1200px;
         margin: 0 auto;
         background-color: #F1E6D8;
         padding: 0px;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_min-height.php]
+      Author: [w3schools]
+      Name: [CSS min-height Property]
+      Description: [The min-height property defines the minimum height of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         min-height: 2285px;
+          /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_box-sizing.asp]
+      Author: [w3schools]
+      Name: [CSS Box Sizing]
+      Description: [The CSS box-sizing property defines how to calculate the width and height of an element: should the calculation include padding and borders, or not.]
+      Date retrieved: [2025/12/04]
+      -->*/
         box-sizing: border-box;
         position: relative;
       }
 
+      /* Top header banner styling */
       .top-rectangle {
         width: 1200px;
         height: 249px;
         background-color: #AA2B3A;
         margin-top: 0px;
+          /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_max-width.php]
+      Author: [w3schools]
+      Name: [CSS max-width Property]
+      Description: [The max-width property defines the maximum width of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         max-width: 100%;
         position: relative;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/css/css_overflow.asp]
+      Author: [w3schools]
+      Name: [CSS The overflow Property]
+      Description: [The CSS overflow property controls what happens to content that is too big to fit into an area.]
+      Date retrieved: [2025/12/04]
+      -->*/
         overflow: visible;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/css3_pr_align-items.php]
+      Author: [w3schools]
+      Name: [CSS align-items Property]
+      Description: [The align-items property specifies the default alignment for items inside a flexbox or grid container.]
+      Date retrieved: [2025/12/04]
+      -->*/
         align-items: flex-start;
+          /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_flexbox.asp]
+      Author: [w3schools]
+      Name: [CSS Flexbox]
+      Description: [Flexbox is a layout model for arranging items (horizontally or vertically) within a container, in a flexible and responsive way.]
+      Date retrieved: [2025/12/04]
+      -->*/
         display: flex;
         bottom: 0;
       }
 
+      /* Page title/slogan styling */
       .promote-slogan {
         font-family: 'Archivo Black', sans-serif;
         font-size: 60px;
@@ -158,42 +245,75 @@
         margin: 30px 0 30px 55px;
       }
 
+      /* Logo image positioning and sizing */
       .logo {
         position: relative;
         top: 28px;
         left: 32px;
         width: 242px;
         height: 200px;
+          /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_max-width.php]
+      Author: [w3schools]
+      Name: [CSS max-width Property]
+      Description: [The max-width property defines the maximum width of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         max-width: 100%;
         margin: 0;
       }
 
+      /* Decorative separator line in the footer */
    .separator-line {
         width: 1060px;
         height: 2px;
         background-color: white;
         margin: 11px auto 20px auto;
       }
+      
+      /* Bottom footer banner styling */
           .bottom-rectangle {
         width: 1200px;
         height: 359px;
         background-color: #141E46;
+              /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_max-width.php]
+      Author: [w3schools]
+      Name: [CSS max-width Property]
+      Description: [The max-width property defines the maximum width of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         max-width: 100%;
         position: absolute;
         bottom: 0;
         margin: 0;
         padding-top: 35px;
+             /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_box-sizing.asp]
+      Author: [w3schools]
+      Name: [CSS Box Sizing]
+      Description: [The CSS box-sizing property defines how to calculate the width and height of an element: should the calculation include padding and borders, or not.]
+      Date retrieved: [2025/12/04]
+      -->*/
         box-sizing: border-box;
       }
 
 
+      /* Media query for responsiveness on smaller screens */
+      /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/atrule_media.php]
+      Author: [w3schools]
+      Name: [CSS @media Rule]
+      Description: [The CSS @media rule is used in media queries to apply different styles for different media types/devices.]
+      Date retrieved: [2025/12/04]
+      -->*/
       @media (max-width: 1440px) {
         .wrapper {
           width: 100%;
         }
       }
 
-     
+     /* Footer element positioning */
       footer {
         position: absolute;
         bottom: 0;
@@ -205,6 +325,7 @@
         font-weight: bold;
       }
 
+      /* Footer copyright text style */
       footer p {
         margin: 0;
         padding: 20px 0;
@@ -212,72 +333,138 @@
         font-weight: bold;
       }
       
+      /* Container for address and contact details in the footer */
       .address-container {
         text-align: center;
         color: white;
         font-size: 24px;
       }
 
+      /* Paragraph text style inside the address container */
       .address-container p {
         text-align: center;
         margin: 4px 0;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_line-height.php]
+      Author: [w3schools]
+      Name: [CSS line-height Property]
+      Description: [The line-height property specifies the height of a line.]
+      Date retrieved: [2025/12/04]
+      -->*/
         line-height: 1;
       }
 
+      /* Keep link text white when hovering over the badge container */
       .badge:hover a {
         color: white;
       }
 
+      /* Container for the owner profile section (About page specific) */
       .owner-profile-container {
         text-align: center;
         margin: 70px auto 0 auto;
         position: static;
       }
 
+      /* Styling for the circular owner profile image */
       .owner-profile-container img {
         width: 450px;
         height: 450px;
         border-radius: 50%;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_object-fit.asp]
+      Author: [w3schools]
+      Name: [CSS object-fit Property]
+      Description: [The CSS object-fit property is used to specify how an <img> or <video> should be resized to fit its container.]
+      Date retrieved: [2025/12/04]
+      -->*/
         object-fit: cover;
         border: 8px solid #AA2B3A;
+          /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/css3_pr_box-shadow.php]
+      Author: [w3schools]
+      Name: [CSS box-shadow Property]
+      Description: [The box-shadow property attaches one or more shadows to an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+          /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_class_display.php]
+      Author: [w3schools]
+      Name: [CSS display Property]
+      Description: [The display property specifies the display behavior (the type of rendering box) of an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         display: block;
         margin: -30px auto;
       }
 
+      /* Container for owner name and tagline */
       .owner-bio {
         text-align: center;
       }
 
+      /* Styling for the owner's name & role*/
       .owner-name {
         font-family: 'Archivo Black', sans-serif;
         font-size: 45px;
         color: #AA2B3A;
         margin-bottom: 10px;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_line-height.php]
+      Author: [w3schools]
+      Name: [CSS line-height Property]
+      Description: [The line-height property specifies the height of a line.]
+      Date retrieved: [2025/12/04]
+      -->*/
         line-height: 1.5;
       }
 
+      /* Styling for the owner's tagline */
       .owner-tagline {
         font-family: "Times New Roman", Times, serif;
         font-style: italic;
         font-size: 30px;
         color: #1C2A62;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_line-height.php]
+      Author: [w3schools]
+      Name: [CSS line-height Property]
+      Description: [The line-height property specifies the height of a line.]
+      Date retrieved: [2025/12/04]
+      -->*/
         line-height: 1.4;
         font-weight: bold;
         display: block;
         margin: 20px auto 0 auto;
       }
 
+      /* Container for the B&B philosophy text */
       .philosophy-section {
         width: 1000px;
         margin: 40px auto 0 auto;
         padding: 30px;
         background-color: white;
         border-radius: 10px;
+           /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/css3_pr_box-shadow.php]
+      Author: [w3schools]
+      Name: [CSS box-shadow Property]
+      Description: [The box-shadow property attaches one or more shadows to an element.]
+      Date retrieved: [2025/12/04]
+      -->*/
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+          /*<!--
+      Code copied from: [https://www.w3schools.com/css/css3_box-sizing.asp]
+      Author: [w3schools]
+      Name: [CSS Box Sizing]
+      Description: [The CSS box-sizing property defines how to calculate the width and height of an element: should the calculation include padding and borders, or not.]
+      Date retrieved: [2025/12/04]
+      -->*/
         box-sizing: border-box;
       }
 
+      /* Title for the philosophy section */
       .philosophy-title {
         font-family: 'Archivo Black', sans-serif;
         font-size: 35px;
@@ -286,23 +473,32 @@
         margin-top: 40px;
       }
 
+      /* Horizontal line under the philosophy title */
       .philosophy-line {
         width: 80%;
-        border: 0;
         height: 2px;
         background-color: #AA2B3A;
         margin: -10px auto 30px auto;
       }
 
+      /* Paragraph styling for the philosophy text */
       .philosophy-section p {
         font-family: "Times New Roman", Times, serif;
         font-size: 27px;
         color: #1C2A62;
+         /*<!--
+      Code copied from: [https://www.w3schools.com/cssref/pr_dim_line-height.php]
+      Author: [w3schools]
+      Name: [CSS line-height Property]
+      Description: [The line-height property specifies the height of a line.]
+      Date retrieved: [2025/12/04]
+      -->*/
         line-height: 1.6;
         margin-bottom: 30px;
         text-align: justify;
       }
       
+      /* Title for the location in the bottom rectangle */
       .location-title {
         position: static;
         font-size: 40px;
@@ -352,13 +548,27 @@
         <div class="owner-profile-container">
           <img src="owner.png" alt="Owner's Image">
           <div class="owner-bio">
+             <!--
+      Code copied from: [https://www.w3schools.com/tags/tag_br.asp]
+      Author: [w3schools]
+      Name: [HTML <br> Tag]
+      Description: [The <br> tag inserts a single line break.]
+      Date retrieved: [2025/12/04]
+      -->
             <p class="owner-name">*Daniel Lin*<br> Cozy Nest B&B Founder</p>
             <p class="owner-tagline">— Dedicated to Scandinavian comfort and hospitality —</p> 
           </div>
         </div>
         
         <div class="philosophy-section">
-          <h3 class="philosophy-title">How the B&B Was Established</h3>      
+          <h3 class="philosophy-title">How the B&B Was Established</h3>   
+                <!--
+      Code copied from: [https://www.w3schools.com/howto/howto_css_style_hr.asp]
+      Author: [w3schools]
+      Name: [How TO - Style HR (Horizontal Ruler/Line)]
+      Description: [Create the border property to style a hr element]
+      Date retrieved: [2025/12/04]
+      -->
           <hr class="philosophy-line">
           <p> - Founded by Daniel Lin, a 48-year-old designer and lifelong nature enthusiast, Scandinavian Cabin Retreat reflects his belief that calm, simplicity, and warmth can transform a stay into a meaningful experience. After years of traveling through Nordic regions and studying minimalist design, Daniel wanted to create a quiet sanctuary where guests could slow down and reconnect with nature.</p>
           <p> - What began as a personal project, renovating a small lakeside cabin, slowly grew into a full B&B. Daniel spent years refining every detail, from the architecture to the interior textures, inspired by Scandinavian comfort and Asian craftsmanship. Scandinavian Cabin Retreat opened its doors with a single goal: to offer guests a “peaceful, thoughtful, and beautifully designed place to rest. </p>
@@ -373,6 +583,13 @@
             <p>Suite 302, 88 Norwood Avenue</p>
             <p>Waterloo, ON N2L 4G2, Canada</p>
             <p>Customer Service: +1 (289) 555-1472</p>
+             <!--
+      Code copied from: [https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto]
+      Author: [w3schools]
+      Name: [HTML mailto rule]
+      Description: [To create a link that opens in the user's email program (to let them send a new email), use mailto: inside the href attribute:]
+      Date retrieved: [2025/12/04]
+      -->
             <p>Email: <a href="mailto:y259fang@uwaterloo.ca">y259fang@uwaterloo.ca</a></p>
             <p>Business Hours: 9:00 AM – 9:00 PM</p>
           </div>
